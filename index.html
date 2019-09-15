@@ -3,25 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sit on chair</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header ">
+    <header id="header">
         <div class="container">
-            <h1 id="logo"><a href="#">sit <span>on</span> chair</a></h1>
+            <h1>
+                <a href="#">sit <span>on</span> chair</a>
+            </h1>
             <nav>
                 <ul>
-                    <li><a href="#">o firmie</a></li>
-                    <li><a href="#">galeria</a></li>
-                    <li><a href="#">kontakt</a></li>
+                    <li class="dropdown">
+                        <a href="#">O firmie</a>
+                        <ul>
+                            <li><a href="#aktualnosci">Aktualności</a></li>
+                            <li><a href="#team">Nasz team</a></li>
+                            <li><a href="#historia">Historia</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Kontakt</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <
 
+
+    <section id="slider">
+        <div class="container">
+            <span class="arrow arrow-left"><</span>
+            <span class="arrow arrow-right">></span>
+            <div class="img">
+                <img src="images/black_chair.png" alt="A black chair.">
+            </div>
+            <div class="text">
+                <h1>sit <span> on </span>our<span> chair</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nulla possimus consequatur magnam tempore, officiis fuga earum. Neque, laborum architecto doloribus itaque distinctio quaerat necessitatibus quia id, placeat iste hic?</p>
+                <button><a href="#">Zobacz więcej</a></button>
+            </div>
+        </div>
+    </section>
+    <section id="articles">
+        <div class="container">
+            <div class="article">
+                <img src="./images/box1_img.jpg" alt="">
+                <div><h2>chair <span>Clair</span></h2></div>
+            </div>
+            <div class="article">
+                <img src="./images/box2_img.jpg" alt="">
+                <div>
+                    <h2>chair <span>Margarita</span></h2>
+                </div>
+            </div>
+            <div class="article">
+                <div>
+                <h2>Find all inputs</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eveniet commodi atque esse amet. Ullam id hic ratione ut nesciunt.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, velit!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="prices">
+        <div class="container">
+            <h2>Cennik</h2>
+            <div class="plans">
+                <div class="plan">
+                    <ul>
+                        <h3>Basic plan</h3>
+                        <li>
+                            <div class="price-circle">
+                                <p><span>85</span><sup>99</sup></p>
+                                <p>pln/msc</p>
+                            </div>
+                        </li>
+                        <li>Zakup towaru + dowóz</li>
+                        <li>Serwis</li>
+                    </ul>
+                    <button>Dołącz</button>
+                </div>
+                <div class="plan">
+                    <ul>
+                        <h3>Standard plan</h3>
+                        <li>
+                            <div class="price-circle">
+                                <p><span>95</span><sup>99</sup></p>
+                                <p>pln/msc</p>
+                            </div>
+                        </li>
+                        <li>Zakup towaru + dowóz</li>
+                        <li>Serwis</li>
+                        <li>Gwarancja 5 lat</li>
+                    </ul>
+                    <button>Dołącz</button>
+                </div>
+                <div class="plan">
+                    <ul>
+                        <h3>Advance plan</h3>
+                        <li>
+                            <div class="price-circle">
+                                <p><span>211</span><sup>00</sup></p>
+                                <p>pln/msc</p>
+                            </div>
+                        </li>
+                        <li>Zakup towaru + dowóz</li>
+                        <li>Serwis</li>
+                        <li>Gwarancja 5 lat</li>
+                        <li>Porady projektanta</li>
+                    </ul>
+                    <button>Dołącz</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <form class="contact">
+                <div class="inputs">
+                    <p>
+                        <input type="text" placeholder="Imię">
+                    </p>
+                    <p>
+                        <input type="text" placeholder="Email">
+                    </p>
+                    <p>
+                        <textarea placeholder="Wiadomość" rows="4" ></textarea>
+                    </p>
+                </div>
+                <div class="submit">
+                    <img src="./images/red_chair.png" alt="">
+                    <p><span>Zgadzam się na przetwarznie danych osobowych.</span></p>
+                    <button>Wyślij</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <p>Copyright 2014 | All rights reserved. Sit On Chair</p>
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <p>sit <b>on</b> chair</p>
+            </ul>
+            
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
